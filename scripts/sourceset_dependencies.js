@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":boots:simboot-core:dokkaHtmlPartial/main":[],":boots:simboot-core-annotation:dokkaHtmlPartial/main":[],":boots:simboot-core-spring-boot-starter:dokkaHtmlPartial/main":[],":apis:simbot-api:dokkaHtmlPartial/main":[],":cores:simbot-core:dokkaHtmlPartial/main":[],":boots:simboot-api:dokkaHtmlPartial/main":[]}'
