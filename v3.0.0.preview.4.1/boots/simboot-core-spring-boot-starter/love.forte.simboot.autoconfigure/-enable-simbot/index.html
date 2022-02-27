@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>EnableSimbot</title>
+</head><body><link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script><link href="../../../../styles/style.css" rel="Stylesheet"><link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../../styles/main.css" rel="Stylesheet"><link href="../../../../styles/prism.css" rel="Stylesheet"><link href="../../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../../scripts/main.js" defer></script><script type="text/javascript" src="../../../../scripts/prism.js" async></script><script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+
+  
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../../index.html"><span>simple-robot</span></a></div>
+      <div>3.0.0.preview.4.1</div>
+      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageids="simboot-core-spring-boot-starter::love.forte.simboot.autoconfigure/EnableSimbot///PointingToDeclaration//-756665147">
+          <div class="breadcrumbs"><a href="../../index.html">simboot-core-spring-boot-starter</a>/<a href="../index.html">love.forte.simboot.autoconfigure</a>/<a href="index.html">EnableSimbot</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span>Enable</span><wbr><span><span>Simbot</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":boots:simboot-core-spring-boot-starter:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/index.html"><span class="token annotation">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html">AnnotationTarget.CLASS</a></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation">@</span><span data-unresolved-link="org.springframework.context.annotation/Import///PointingToDeclaration/"><span class="token annotation">Import</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="../-simbot-includes-selector/index.html">SimbotIncludesSelector::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-springboot-core-boot-entrance-context-factories-configuration/index.html">SpringbootCoreBootEntranceContextFactoriesConfiguration::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-spring-event-listener-manager-configuration/index.html">SpringEventListenerManagerConfiguration::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-springboot-core-boot-entrance-context-configuration/index.html">SpringbootCoreBootEntranceContextConfiguration::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-simboot-app-runner-configuration/index.html">SimbootAppRunnerConfiguration::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-simboot-autoconfigure/index.html">SimbootAutoconfigure::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-simboot-context-starter-properties/index.html">SimbootContextStarterProperties::class</a><span class="token punctuation">, </span></span><wbr><span><a href="../-simbot-app-starter/index.html">SimbotAppStarter::class</a></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="index.html">EnableSimbot</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">标记于Springboot相关例如启动类中，告知simbot-springboot-starter simbot的启动入口。</p><p class="paragraph">simbot的starter会直接扫描spring的依赖信息来加载监听函数，但是无法通过spring来扫描kotlin的顶层函数， 因此 <a href="index.html">EnableSimbot</a> 可以用于告知simbot扫描顶层函数的范围。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// Kotlin<br> @EnableSimbot<br> @SpringBootApplication<br> open class Main<br><br> fun main(vararg args: String) {<br>     val context = runApplication&lt;Main&gt;(*args)<br> }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="sample-container"><pre><code class="block lang-java" theme="idea">@EnableSimbot<br>@SpringBootApplication<br>public class Main {<br>    public static void main(String[] args) {<br>        SpringApplication.run(Main.class, args);<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="725266043%2FConstructors%2F-756665147" anchor-label="EnableSimbot" id="725266043%2FConstructors%2F-756665147" data-filterable-set=":boots:simboot-core-spring-boot-starter:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":boots:simboot-core-spring-boot-starter:dokkaHtmlPartial/main" data-filterable-set=":boots:simboot-core-spring-boot-starter:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-enable-simbot.html"><span>Enable</span><wbr><span><span>Simbot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="725266043%2FConstructors%2F-756665147"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":boots:simboot-core-spring-boot-starter:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-enable-simbot.html"><span class="token function">EnableSimbot</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  
+</body></html>
+
+
