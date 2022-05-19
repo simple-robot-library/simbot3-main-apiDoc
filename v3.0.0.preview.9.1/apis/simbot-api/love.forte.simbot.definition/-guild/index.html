@@ -1,0 +1,468 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Guild</title>
+</head><body><link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script><link href="../../../../styles/style.css" rel="Stylesheet"><link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../../styles/main.css" rel="Stylesheet"><link href="../../../../styles/prism.css" rel="Stylesheet"><link href="../../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../../scripts/main.js" defer></script><script type="text/javascript" src="../../../../scripts/prism.js" async></script><script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+
+  
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../../index.html"><span>simple-robot</span></a></div>
+      <div>3.0.0.preview.9.1</div>
+      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageids="simbot-api::love.forte.simbot.definition/Guild///PointingToDeclaration//1341286883">
+          <div class="breadcrumbs"><a href="../../index.html">simbot-api</a>/<a href="../index.html">love.forte.simbot.definition</a>/<a href="index.html">Guild</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span><span>Guild</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Guild</a> : <a href="../-organization/index.html">Organization</a>, <a href="../-guild-info/index.html">GuildInfo</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">一个频道服务器，或者说一个集会。</p><p class="paragraph">目前来看，大部分 guild 其本身是无法发送消息进行交流的。</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="1767069155%2FFunctions%2F1341286883" anchor-label="children" id="1767069155%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="children.html"><span><span>children</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1767069155%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="children.html"><span class="token function">children</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-channel/index.html">Channel</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">得到下一级的数据内容。</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="children.html"><span class="token function">children</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">, </span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-channel/index.html">Channel</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">一个 Guild 的子集应当是一些频道.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1300467607%2FFunctions%2F1341286883" anchor-label="getChildren" id="1300467607%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-children.html"><span>get</span><wbr><span><span>Children</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1300467607%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-children.html"><span class="token function">getChildren</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-channel/index.html">Channel</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-children.html"><span class="token function">getChildren</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-channel/index.html">Channel</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-children.html"><span class="token function">getChildren</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">, </span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-channel/index.html">Channel</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-872557746%2FFunctions%2F1341286883" anchor-label="getMember" id="-872557746%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-member.html"><span>get</span><wbr><span><span>Member</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-872557746%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-member.html"><span class="token function">getMember</span></a><span class="token punctuation">(</span>id<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1086664931%2FFunctions%2F1341286883" anchor-label="getMembers" id="-1086664931%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-members.html"><span>get</span><wbr><span><span>Members</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1086664931%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-members.html"><span class="token function">getMembers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-members.html"><span class="token function">getMembers</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-members.html"><span class="token function">getMembers</span></a><span class="token punctuation">(</span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-members.html"><span class="token function">getMembers</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">, </span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-640399091%2FFunctions%2F1341286883" anchor-label="getRoles" id="-640399091%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-organization/get-roles.html"><span>get</span><wbr><span><span>Roles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-640399091%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-organization/get-roles.html"><span class="token function">getRoles</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token operator"> = </span>Limiter<span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">Stream</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../-role/index.html">Role</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="144368816%2FFunctions%2F1341286883" anchor-label="member" id="144368816%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="member.html"><span><span>member</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="144368816%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="member.html"><span class="token function">member</span></a><span class="token punctuation">(</span>id<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">尝试通过ID获取一个成员，无法获取则得到null。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="663911847%2FFunctions%2F1341286883" anchor-label="members" id="663911847%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="members.html"><span><span>members</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="663911847%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="members.html"><span class="token function">members</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token punctuation">, </span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-guild-member/index.html">GuildMember</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">一个组织中，可能存在<a href="members.html">成员</a>.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2064190926%2FFunctions%2F1341286883" anchor-label="mute" id="2064190926%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-organization/mute.html"><span><span>mute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2064190926%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="../-organization/mute.html"><span class="token function">mute</span></a><span class="token punctuation">(</span>duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/index.html">Duration</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">对整个组织进行禁言。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1659073526%2FFunctions%2F1341286883" anchor-label="muteBlocking" id="-1659073526%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../../love.forte.simbot.action/-mute-support/mute-blocking.html"><span>mute</span><wbr><span><span>Blocking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1659073526%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../love.forte.simbot.action/-mute-support/mute-blocking.html"><span class="token function">muteBlocking</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../love.forte.simbot.action/-mute-support/mute-blocking.html"><span class="token function">muteBlocking</span></a><span class="token punctuation">(</span>time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span>unit<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html">TimeUnit</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1705746060%2FFunctions%2F1341286883" anchor-label="owner" id="-1705746060%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="owner.html"><span><span>owner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1705746060%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="owner.html"><span class="token function">owner</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-member/index.html">Member</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">组织的拥有者信息。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-74132296%2FFunctions%2F1341286883" anchor-label="previous" id="-74132296%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-organization/previous.html"><span><span>previous</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-74132296%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="../-organization/previous.html"><span class="token function">previous</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-organization/index.html">Organization</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">上一级，或者说这个组织的上层。 组织有可能是层级的，因此一个组织结构可能会有上一层的组织。 当然，也有可能不存在。不存在的时候，那么这个组织就是顶层。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="764287015%2FFunctions%2F1341286883" anchor-label="roles" id="764287015%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-organization/roles.html"><span><span>roles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="764287015%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="../-organization/roles.html"><span class="token function">roles</span></a><span class="token punctuation">(</span>groupingId<span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span>limiter<span class="token operator">: </span><a href="../../love.forte.simbot/-limiter/index.html">Limiter</a><span class="token operator"> = </span>Limiter<span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-role/index.html">Role</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">根据分组ID和限流器尝试获取当前组织下的所有角色。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-914048341%2FFunctions%2F1341286883" anchor-label="sendIfSupportBlocking" id="-914048341%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-objectives/send-if-support-blocking.html"><span>send</span><wbr><span>If</span><wbr><span>Support</span><wbr><span><span>Blocking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-914048341%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-objectives/send-if-support-blocking.html"><span class="token function">sendIfSupportBlocking</span></a><span class="token punctuation">(</span>message<span class="token operator">: </span><a href="../../love.forte.simbot.message/-message/index.html">Message</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../love.forte.simbot.message/-message-receipt/index.html">MessageReceipt</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">如果当前支持发送消息，则发送. 否则得到null。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2108536739%2FFunctions%2F1341286883" anchor-label="unmute" id="-2108536739%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-organization/unmute.html"><span><span>unmute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2108536739%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="../-organization/unmute.html"><span class="token function">unmute</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">结束整个群的禁言。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-742038350%2FFunctions%2F1341286883" anchor-label="unmuteBlocking" id="-742038350%2FFunctions%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../../love.forte.simbot.action/-mute-support/unmute-blocking.html"><span>unmute</span><wbr><span><span>Blocking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-742038350%2FFunctions%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../love.forte.simbot.action/-mute-support/unmute-blocking.html"><span class="token function">unmuteBlocking</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-784830624%2FProperties%2F1341286883" anchor-label="bot" id="-784830624%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="bot.html">bot</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-784830624%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-784830624%2FProperties%2F1341286883" anchor-label="bot" id="-784830624%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="bot.html">bot</a><span class="token operator">: </span><a href="../../love.forte.simbot/-bot/index.html">Bot</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-784830624%2FProperties%2F1341286883" anchor-label="bot" id="-784830624%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">这个组织一定是属于某一个Bot之下的。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="639084330%2FProperties%2F1341286883" anchor-label="createTime" id="639084330%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="create-time.html">createTime</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="639084330%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="639084330%2FProperties%2F1341286883" anchor-label="createTime" id="639084330%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="create-time.html">createTime</a><span class="token operator">: </span><a href="../../love.forte.simbot/-timestamp/index.html">Timestamp</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="639084330%2FProperties%2F1341286883" anchor-label="createTime" id="639084330%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">组织的创建时间。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1266032585%2FProperties%2F1341286883" anchor-label="currentChannel" id="-1266032585%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-guild-info/current-channel.html">currentChannel</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1266032585%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-1266032585%2FProperties%2F1341286883" anchor-label="currentChannel" id="-1266032585%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-guild-info/current-channel.html">currentChannel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1266032585%2FProperties%2F1341286883" anchor-label="currentChannel" id="-1266032585%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">当前服务器内已存在频道数量。 如果无法获取，得到-1.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1494954828%2FProperties%2F1341286883" anchor-label="currentMember" id="-1494954828%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="current-member.html">currentMember</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1494954828%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-1494954828%2FProperties%2F1341286883" anchor-label="currentMember" id="-1494954828%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="current-member.html">currentMember</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1494954828%2FProperties%2F1341286883" anchor-label="currentMember" id="-1494954828%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">当前组织内已存在成员数量。 如果无法获取，得到-1.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="371078347%2FProperties%2F1341286883" anchor-label="description" id="371078347%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="description.html">description</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="371078347%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="371078347%2FProperties%2F1341286883" anchor-label="description" id="371078347%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="description.html">description</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="371078347%2FProperties%2F1341286883" anchor-label="description" id="371078347%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">组织的对外描述信息。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1656723226%2FProperties%2F1341286883" anchor-label="icon" id="1656723226%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="icon.html">icon</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1656723226%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="1656723226%2FProperties%2F1341286883" anchor-label="icon" id="1656723226%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="icon.html">icon</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1656723226%2FProperties%2F1341286883" anchor-label="icon" id="1656723226%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">组织的图标/头像。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-198486472%2FProperties%2F1341286883" anchor-label="id" id="-198486472%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="id.html">id</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-198486472%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-198486472%2FProperties%2F1341286883" anchor-label="id" id="-198486472%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-198486472%2FProperties%2F1341286883" anchor-label="id" id="-198486472%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">对于这个组织, 有一个唯一ID。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-980189986%2FProperties%2F1341286883" anchor-label="maximumChannel" id="-980189986%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-guild-info/maximum-channel.html">maximumChannel</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-980189986%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-980189986%2FProperties%2F1341286883" anchor-label="maximumChannel" id="-980189986%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-guild-info/maximum-channel.html">maximumChannel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-980189986%2FProperties%2F1341286883" anchor-label="maximumChannel" id="-980189986%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">当前服务器内频道最大承载量。 如果无法获取，得到-1.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1485734099%2FProperties%2F1341286883" anchor-label="maximumMember" id="-1485734099%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="maximum-member.html">maximumMember</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1485734099%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-1485734099%2FProperties%2F1341286883" anchor-label="maximumMember" id="-1485734099%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="maximum-member.html">maximumMember</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1485734099%2FProperties%2F1341286883" anchor-label="maximumMember" id="-1485734099%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">当前组织内成员最大承载量。 如果无法获取，得到-1.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-865668792%2FProperties%2F1341286883" anchor-label="name" id="-865668792%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="name.html">name</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-865668792%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-865668792%2FProperties%2F1341286883" anchor-label="name" id="-865668792%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-865668792%2FProperties%2F1341286883" anchor-label="name" id="-865668792%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">组织的名称。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1705746060%2FProperties%2F1341286883" anchor-label="owner" id="-1705746060%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="owner.html">owner</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1705746060%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-1705746060%2FProperties%2F1341286883" anchor-label="owner" id="-1705746060%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="owner.html">owner</a><span class="token operator">: </span><a href="../-member/index.html">Member</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2132676313%2FProperties%2F1341286883" anchor-label="ownerId" id="2132676313%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="owner-id.html">ownerId</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2132676313%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="2132676313%2FProperties%2F1341286883" anchor-label="ownerId" id="2132676313%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="owner-id.html">ownerId</a><span class="token operator">: </span><a href="../../love.forte.simbot/-i-d/index.html">ID</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2132676313%2FProperties%2F1341286883" anchor-label="ownerId" id="2132676313%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><p class="paragraph">组织的拥有者的ID。</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="956466390%2FProperties%2F1341286883" anchor-label="previous" id="956466390%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-structured/previous.html">previous</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="956466390%2FProperties%2F1341286883"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apis:simbot-api:dokkaHtmlPartial/main"><a data-name="956466390%2FProperties%2F1341286883" anchor-label="previous" id="956466390%2FProperties%2F1341286883" data-filterable-set=":apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-structured/previous.html">previous</a><span class="token operator">: </span><a href="../-organization/index.html">Organization</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  
+</body></html>
+
+
