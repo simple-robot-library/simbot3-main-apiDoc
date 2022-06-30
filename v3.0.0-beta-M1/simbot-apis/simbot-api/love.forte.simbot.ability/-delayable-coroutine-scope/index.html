@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DelayableCoroutineScope</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../../index.html">
+<span>simple-robot</span>            </a>    </div>
+    <div>3.0.0-beta-M1
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="simbot-api::love.forte.simbot.ability/DelayableCoroutineScope///PointingToDeclaration//-141639634">
+  <div class="breadcrumbs"><a href="../../index.html">simbot-api</a><span class="delimiter">/</span><a href="../index.html">love.forte.simbot.ability</a><span class="delimiter">/</span><a href="index.html">DelayableCoroutineScope</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Delayable</span><wbr><span>Coroutine</span><wbr><span><span>Scope</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":simbot-apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">DelayableCoroutineScope</a> : <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">可延迟的 <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span>。 <a href="index.html">DelayableCoroutineScope</a> 继承并扩展 <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span>, 对外提供部分服务于 Java 开发者的“延迟”函数。</p><p class="paragraph">对外提供的这些延时函数本质上是通过当前作用域所构建的异步函数，并通过 <a href="delay.html">delay</a> 实现非阻塞的延时效果。 Java 开发者可以通过这些延时函数来更高效的通过异步回调手段类似于 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#sleep-kotlin.Long-">Thread.sleep</a> 的效果。</p><p class="paragraph">需要注意的是，本质上这些延迟任务都是 <strong>异步</strong> 的，所以需要依靠回调函数进行进一步的逻辑。</p><p class="paragraph">Java 开发者可以通过链式风格使用这些延时函数：</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">public void foo(Bot bot) { // Bot 间接实现了 DelayableCoroutineScope<br>final DelayableFuture&lt;LocalTime&gt; whole = bot<br>        // (1). 延时5秒，打印当前时间<br>        .delay(5, TimeUnit.SECONDS, () -&gt; {<br>            System.out.println(LocalTime.now());<br>        })<br>        // (2). 流程(1)结束后，再延时5秒，打印当前时间<br>        .delay(5, TimeUnit.SECONDS, () -&gt; {<br>            System.out.println(LocalTime.now());<br>        })<br>        // (3). 流程(2)结束后，再延时5秒，返回当前时间<br>        .delayAndCompute(5, TimeUnit.SECONDS, (v) -&gt; LocalTime.now());<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">上述示例中，函数内通过 <code class="lang-kotlin">bot</code> 总共创建了3个延时函数，他们将在 <strong>异步</strong> 中按照顺序分别延时5秒。 内部异步的延时任务会在创建时立刻执行。示例中的 <code class="lang-kotlin">foo</code> 函数会立刻返回，而延时任务不会收到影响。</p><p class="paragraph">当然，延时任务的最后会返回 <a href="../-delayable-completable-future/index.html">DelayableCompletableFuture</a>, 它实现 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html">Future</a>, 你可以通过此 future 获取整体延时任务的最终结果， 或者控制延时任务的流程。</p><p class="paragraph">如果流程中某个节点出现了异常，则后续延时任务会受到上游任务的影响而无法抵达。</p><h4 class="">Author</h4><p class="paragraph">ForteScarlet</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1681613673%2FFunctions%2F-141639634" anchor-label="delay" id="1681613673%2FFunctions%2F-141639634" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":simbot-apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="delay.html"><span><span>delay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1681613673%2FFunctions%2F-141639634"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":simbot-apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="delay.html"><span class="token function">delay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">runnable<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-delayable-completable-future/index.html">DelayableCompletableFuture</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="delay.html"><span class="token function">delay</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;timeUnit<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html">TimeUnit</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;runnable<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-delayable-completable-future/index.html">DelayableCompletableFuture</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2035443545%2FFunctions%2F-141639634" anchor-label="delayAndCompute" id="-2035443545%2FFunctions%2F-141639634" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":simbot-apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="delay-and-compute.html"><span>delay</span><wbr><span>And</span><wbr><span><span>Compute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2035443545%2FFunctions%2F-141639634"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":simbot-apis:simbot-api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delay-and-compute.html">V</a><span class="token operator">&gt; </span><a href="delay-and-compute.html"><span class="token function">delayAndCompute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">supplier<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html">Supplier</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delay-and-compute.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-delayable-completable-future/index.html">DelayableCompletableFuture</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delay-and-compute.html">V</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../love.forte.simbot/-api4-j/index.html"><span class="token annotation">Api4J</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delay-and-compute.html">V</a><span class="token operator">&gt; </span><a href="delay-and-compute.html"><span class="token function">delayAndCompute</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;timeUnit<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html">TimeUnit</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;supplier<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html">Supplier</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delay-and-compute.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-delayable-completable-future/index.html">DelayableCompletableFuture</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delay-and-compute.html">V</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1654120400%2FProperties%2F-141639634" anchor-label="coroutineContext" id="-1654120400%2FProperties%2F-141639634" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":simbot-apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../love.forte.simbot.application/-event-provider/index.html#-1654120400%2FProperties%2F-141639634">coroutineContext</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1654120400%2FProperties%2F-141639634"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":simbot-apis:simbot-api:dokkaHtmlPartial/main"><a data-name="-1654120400%2FProperties%2F-141639634" anchor-label="coroutineContext" id="-1654120400%2FProperties%2F-141639634" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../../love.forte.simbot.application/-event-provider/index.html#-1654120400%2FProperties%2F-141639634">coroutineContext</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="-1193128464%2FInheritors%2F-141639634" anchor-label="Switchable" id="-1193128464%2FInheritors%2F-141639634" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":simbot-apis:simbot-api:dokkaHtmlPartial/main" data-filterable-set=":simbot-apis:simbot-api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-switchable/index.html">Switchable</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1193128464%2FInheritors%2F-141639634"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+        </div>
+    </div>
+</div>
+
+</body></html>
+
